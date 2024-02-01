@@ -1,0 +1,37 @@
+<!-- password.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Input Page</title>
+  <!-- Add any styles or additional head content if needed -->
+</head>
+
+<body>
+  <div>
+    <h2>Enter Password:</h2>
+    <form id="passwordForm">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="button" value="Submit" onclick="checkPassword()">
+    </form>
+
+    <script>
+      function checkPassword() {
+        var enteredPassword = document.getElementById('password').value;
+        // Replace 'your_password' with your actual password
+        if (enteredPassword === 'ayushaa') {
+          // Redirect to index.html if password is correct
+          window.location.href = 'input.html';
+        } else {
+          alert('Incorrect password! Try again.');
+        }
+      }
+    </script>
+  </div>
+</body>
+
+</html>
